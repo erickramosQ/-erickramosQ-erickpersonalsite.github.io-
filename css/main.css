@@ -1,4 +1,4 @@
-h1,h2,h3,h4,h5, button, .amiibo-name{
+h1,h2,h3,h4,h5,h6 button, .amiibo-name{
     font-family: 'Bitter', serif;
 
 }
@@ -57,11 +57,12 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 }
 
 .card-border{
-    border: solid 10px rgb(255, 255, 255);
+    border: solid 10px rgba(255, 255, 255, 0);
     border-radius: 20px;
     overflow: hidden;
     transition: all ease-out 0.2s;
 }
+
 .card-border:hover{
     transform: scale(1.05);
 }
@@ -126,6 +127,9 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 
 #footer-1{
     background: url(../img/bg-04.png);
-    background-color: rgb(231, 229, 246);
+    background-color: rgba(217, 188, 245, 0.068);
     background-size: 50px 50px;
+}
+.navbar-custom {
+    background-color: #ff5500;
 }
