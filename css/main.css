@@ -2,9 +2,7 @@ h1,h2,h3,h4,h5,h6 button, .amiibo-name{
     font-family: 'Bitter', serif;
 
 }
-#navbar{
-    z-index: 1;
-}
+
 
 #ribbon{
     background-color: rgb(6, 12, 17);
@@ -129,7 +127,4 @@ h1,h2,h3,h4,h5,h6 button, .amiibo-name{
     background: url(../img/bg-04.png);
     background-color: rgba(217, 188, 245, 0.068);
     background-size: 50px 50px;
-}
-.navbar-custom {
-    background-color: #ff5500;
 }
