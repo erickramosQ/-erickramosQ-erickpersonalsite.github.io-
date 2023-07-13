@@ -31,9 +31,10 @@
 				
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a class="btn btn-lg rounded-pill btn-warning w-100 h-100 p-2 shadow-sm font-weight-bold"  aria-current="page" href="index.html">Información</a></li>
+						<li class="nav-item"><a class="btn btn-lg rounded-pill btn-warning w-100 h-100 p-2 shadow-sm font-weight-bold"  aria-current="page" href="index.html" >Información</a></li>
 					</b>
 						<li class="nav-item"><a class="btn btn-lg rounded-pill btn-dark w-100 h-100  p-2 shadow-sm font-weight-bold" href="ProyetosDev.html">Proyectos</a></li>
+						<!-- <li class="nav-item"><a class="btn btn-lg rounded-pill btn-warning w-100 h-100 p-2 shadow-sm font-weight-bold"  aria-current="page" href="Tutos.html">Tutoriales</a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -46,14 +47,19 @@
 		  </div>
 		</div> 
 		<div class="container-md p2 ">
-			<div class="col-sm">
+			<button type="button" class="btn btn-warning font-weight-bold" onclick="mostrar()">Aplicaciones Móviles</button>
+			<button type="button" class="btn btn-dark font-weight-bold" onclick="ocultar()">Páginas Web</button>
+			<div class="col-sm" id="apps">
 				<div class="card shadow-lg mb-2 bg-transparent rounded">
 					<div class="row">
 						<div class="col-md-8 pt-5 text-center ">
-							<img class="img-fluid card-border" loading="lazy" src="img/imgproyects/games.jpg" alt="" height="200" width="200">
-							<img class="img-fluid card-border" loading="lazy" src="img/imgproyects/games2.jpg" alt="" height="200" width="200">
-							<img class="img-fluid card-border" loading="lazy" src="img/imgproyects/games3.jpg" alt="" height="200" width="200">
-							<img class="img-fluid card-border" loading="lazy" src="img/imgproyects/game4.jpg" alt="" height="200" width="200">
+							<img id="img1" class="img-fluid card-border" loading="lazy" src="img/imgproyects/games.jpg" alt="" height="200" width="200" onclick="zoomImage('img1')">
+							<img id="img2" class="img-fluid card-border" loading="lazy" src="img/imgproyects/games2.jpg" alt="" height="200" width="200" onclick="zoomImage('img2')">
+							<img id="img3" class="img-fluid card-border" loading="lazy" src="img/imgproyects/games3.jpg" alt="" height="200" width="200" onclick="zoomImage('img3')">
+							<img id="img4" class="img-fluid card-border" loading="lazy" src="img/imgproyects/game4.jpg" alt="" height="200" width="200" onclick="zoomImage('img4')">
+							<div id="zoomOverlay" class="zoom-overlay" onclick="closeOverlay()">
+								<img id="zoomImage" class="zoom-img" src="" alt="Imagen">
+							</div>
 						</div>
 						<div class="col p-3">
 							<h5 class="card-title font-weight-bold text-white text-center">All Games Free</h5>
@@ -119,10 +125,13 @@
 								
 						</div>
 						<div class="col-md-8 pt-5 text-center ">
-							<img class="img-fluid card-border" loading="lazy" src="img/imgproyects/apppolucion1.jpg" alt="" height="200" width="200">
-							<img class="img-fluid card-border" loading="lazy" src="img/imgproyects/apppolucion2.jpg" alt="" height="200" width="200">
-							<img class="img-fluid card-border" loading="lazy" src="img/imgproyects/apppolucion3.jpg" alt="" height="200" width="200">
-							<img class="img-fluid card-border" loading="lazy" src="img/imgproyects/apppolucion4.jpg" alt="" height="200" width="200">
+							<img id="img5" class="img-fluid card-border" loading="lazy" src="img/imgproyects/apppolucion1.jpg" alt="" height="200" width="200" onclick="zoomImage('img5')">
+							<img id="img6" class="img-fluid card-border" loading="lazy" src="img/imgproyects/apppolucion2.jpg" alt="" height="200" width="200" onclick="zoomImage('img6')">
+							<img id="img7" class="img-fluid card-border" loading="lazy" src="img/imgproyects/apppolucion3.jpg" alt="" height="200" width="200" onclick="zoomImage('img7')">
+							<img id="img8" class="img-fluid card-border" loading="lazy" src="img/imgproyects/apppolucion4.jpg" alt="" height="200" width="200" onclick="zoomImage('img8')">
+							<div id="zoomOverlay" class="zoom-overlay" onclick="closeOverlay()">
+								<img id="zoomImage" class="zoom-img" src="" alt="Imagen">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -157,13 +166,15 @@
 										</div>
 									</div>
 							</div>
-							<img class="img-fluid card-border" loading="lazy" src="img/imgproyects/mascotas1.jpg" alt="" height="200" width="200">
-							<img class="img-fluid card-border" loading="lazy" src="img/imgproyects/mascotas6.jpg" alt="" height="200" width="200">
-							<img class="img-fluid card-border" loading="lazy" src="img/imgproyects/mascotas2.jpg" alt="" height="200" width="200">
-							<img class="img-fluid card-border" loading="lazy" src="img/imgproyects/mascotas3.jpg" alt="" height="200" width="200">
-							<img class="img-fluid card-border" loading="lazy"  src="img/imgproyects/mascotas4.jpg" alt="" height="200" width="200">
-							<img class="img-fluid card-border" loading="lazy" src="img/imgproyects/mascotas5.jpg" alt="" height="200" width="200">
-							
+							<img id="img9" class="img-fluid card-border" loading="lazy" src="img/imgproyects/mascotas1.jpg" alt="" height="200" width="200" onclick="zoomImage('img9')">
+							<img id="img10" class="img-fluid card-border" loading="lazy" src="img/imgproyects/mascotas6.jpg" alt="" height="200" width="200" onclick="zoomImage('img10')">
+							<img id="img11" class="img-fluid card-border" loading="lazy" src="img/imgproyects/mascotas2.jpg" alt="" height="200" width="200" onclick="zoomImage('img11')">
+							<img id="img12" class="img-fluid card-border" loading="lazy" src="img/imgproyects/mascotas3.jpg" alt="" height="200" width="200" onclick="zoomImage('img12')">
+							<img id="img13" class="img-fluid card-border" loading="lazy"  src="img/imgproyects/mascotas4.jpg" alt="" height="200" width="200" onclick="zoomImage('img13')">
+							<img id="img14" class="img-fluid card-border" loading="lazy" src="img/imgproyects/mascotas5.jpg" alt="" height="200" width="200" onclick="zoomImage('img14')">
+							<div id="zoomOverlay" class="zoom-overlay" onclick="closeOverlay()">
+								<img id="zoomImage" class="zoom-img" src="" alt="Imagen">
+							</div>
 						</div>
 						
 					</div>
@@ -171,9 +182,74 @@
 			</br>
 				
 		</div>
+		<div class="col-sm" id="website" style="display: none;">
+			<div class="card shadow-lg mb-2 bg-transparent rounded">
+				<div class="row">
+					<div class="col-md-12 pt-3 text-center ">
+						<h5 class="card-title font-weight-bold text-white text-center">Web Intranet entidad bancaria</h5>
+						<p class="card-text text-center text-white" style="padding: 20px;">Este es un sistema web que lista registros e imagenes tipo TIFF hoja por hoja que interactua con un servicio windows 
+							y hace un hover para ver la hoja como zoom, además de esto se puede clasificar cada una de estos registros y modificar los datos de los clientes, en caso de que exista
+							algun error en los datos traidos por el servicio windows, la Web se realizo con HTML5, Javascript y Materialize que es framework CSS responsive basado en Material Design.
+						</p>
+						<img id="img15" class="img-fluid card-border" loading="lazy" src="img/imgproyects/web6.png" alt="" height="400" width="400" onclick="zoomImage2('img15')">
+						<img id="img16" class="img-fluid card-border" loading="lazy" src="img/imgproyects/web5.png" alt="" height="400" width="400" onclick="zoomImage2('img16')">						
+						<img id="img17" class="img-fluid card-border" loading="lazy" src="img/imgproyects/web3.png" alt="" height="400" width="400" onclick="zoomImage2('img17')">
+						<img id="img18" class="img-fluid card-border" loading="lazy" src="img/imgproyects/web1.png" alt="" height="400" width="400" onclick="zoomImage2('img18')">
+						<img id="img19" class="img-fluid card-border" loading="lazy" src="img/imgproyects/web2.png" alt="" height="400" width="400" onclick="zoomImage2('img19')">
+						<img id="img20" class="img-fluid card-border" loading="lazy" src="img/imgproyects/web4.png" alt="" height="400" width="400" onclick="zoomImage2('img20')">
+						<div id="zoomOverlay2" class="zoom-overlay" onclick="closeOverlay2('zoomOverlay2')">
+							<img id="zoomImage2" class="zoom-img" src="" alt="Imagen">
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="card shadow-lg mb-2 bg-transparent rounded">
+				<div class="row">
+					<div class="col-md-12 pt-3 text-center ">
+						<h5 class="card-title font-weight-bold text-white text-center">Web de Reportes Cañeros Guabira</h5>
+						<p class="card-text text-center text-white" style="padding: 20px;">Este es un sistema web que consume un WebService que realicé con Node.js, este servicio se encuentra en el servidor
+							del cliente donde se encuentra su base de datos, en tema de frontend la Web se realizó con HTML5, Javascript y Materialize que es framework CSS responsive basado en Material Design, lo que hace la web es enviar al servicio 
+							tanto para el login como para las consultas los datos de entrada y con la respuesta genera un reporte en pdf o excel, esto para fines del cliente.
+						</p>
+						<img id="img21" class="img-fluid card-border" loading="lazy" src="img/imgproyects/canero1.png" alt="" height="400" width="400" onclick="zoomImage2('img21')">
+						<img id="img22" class="img-fluid card-border" loading="lazy" src="img/imgproyects/canero2.png" alt="" height="400" width="400" onclick="zoomImage2('img22')">
+						<img id="img23" class="img-fluid card-border" loading="lazy" src="img/imgproyects/canero3.png" alt="" height="400" width="400" onclick="zoomImage2('img23')">						
+						<div id="zoomOverlay2" class="zoom-overlay" onclick="closeOverlay2('zoomOverlay2')">
+							<img id="zoomImage2" class="zoom-img" src="" alt="Imagen">
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="card shadow-lg mb-2 bg-transparent rounded">
+				<div class="row">
+					<div class="col-md-12 pt-3 text-center ">
+						<h5 class="card-title font-weight-bold text-white text-center">Página Web TermoAndes</h5>
+						<p style="padding: 20px; padding-bottom: 0;" class="card-text text-center text-white">Esta página web muestra toda la información de la empresa TermoAndes
+							donde se detalla los servicios que brinda, los productos que ofrece, las empresas a la que esta asociada, los datos de contacto y la ubicacion del negocio.
+							Todo esto realizado con HTML5, Materialize Css y Javascript
+							al ser publico pueden ver la web pulsando el logo:
+						</br>
+								<a href="https://www.termoandes.com/"><img src="img/imgproyects/termo4.png"/></a>
+						</p>
+						
+						<img id="img24" class="img-fluid card-border" loading="lazy" src="img/imgproyects/termo1.png" alt="" height="400" width="400" onclick="zoomImage2('img24')">
+						<img id="img25" class="img-fluid card-border" loading="lazy" src="img/imgproyects/termo2.png" alt="" height="400" width="400" onclick="zoomImage2('img25')">						
+						<img id="img26" class="img-fluid card-border" loading="lazy" src="img/imgproyects/termo3.png" alt="" height="400" width="400" onclick="zoomImage2('img26')">
+						<div id="zoomOverlay2" class="zoom-overlay" onclick="closeOverlay2('zoomOverlay2')">
+							<img id="zoomImage2" class="zoom-img" src="" alt="Imagen">
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</br>
+			
 		</div>
 		
-	  </div>
+	</div>
+	</div>
 	  
   
 	  <div id="footer-1" class="p-5">
@@ -189,10 +265,79 @@
 				</br>
 				2022© ErickRamos.com
 			
-		  </div>
-		</div>
-	  </div>
+		  	</div>
+			</div>
+	  	</div>
 
 
 	</body>
 </html>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+function mostrar() {
+  var miDiv = document.getElementById("apps");
+  var miDiv1 = document.getElementById("website");
+  miDiv1.style.display = "none";
+  $(miDiv).fadeIn();
+  miDiv.style.display = "block";
+  $(miDiv1).fadeOut(1000);
+}
+
+function ocultar() {
+  var miDiv = document.getElementById("apps");
+  var miDiv1 = document.getElementById("website");
+  miDiv.style.display = "none";
+  $(miDiv1).fadeIn();
+  miDiv1.style.display = "block";
+  $(miDiv).fadeOut(1000);
+  
+}
+function zoomImage(imageId) {
+    var overlay = document.getElementById("zoomOverlay");
+    var image = document.getElementById(imageId);
+    var zoomImage = document.getElementById("zoomImage");
+    var currentDiv = document.querySelector(".show"); // Obtener el div actualmente mostrado
+
+    overlay.classList.add("visible");
+    zoomImage.src = image.src;
+    zoomImage.classList.toggle("horizontal", image.naturalWidth > image.naturalHeight);
+
+    // Colocar el overlay en el div actualmente mostrado
+    currentDiv.appendChild(overlay);
+}
+function zoomImage2(imageId) {
+    var overlay = document.getElementById("zoomOverlay2");
+    var image = document.getElementById(imageId);
+    var zoomImage = document.getElementById("zoomImage2");
+    var currentDiv = document.querySelector(".show"); // Obtener el div actualmente mostrado
+
+    overlay.classList.add("visible");
+    zoomImage.src = image.src;
+    zoomImage.classList.toggle("horizontal", image.naturalWidth > image.naturalHeight);
+
+    // Colocar el overlay en el div actualmente mostrado
+    currentDiv.appendChild(overlay);
+}
+
+        function closeOverlay() {
+            var overlay = document.getElementById("zoomOverlay");
+            var zoomImages = document.getElementsByClassName("zoom-img");
+
+            overlay.classList.remove("visible");
+
+            for (var i = 0; i < zoomImages.length; i++) {
+                zoomImages[i].classList.remove("zoom-img");
+            }
+        }
+		function closeOverlay2() {
+            var overlay = document.getElementById("zoomOverlay2");
+            var zoomImages = document.getElementsByClassName("zoom-img");
+
+            overlay.classList.remove("visible");
+
+            for (var i = 0; i < zoomImages.length; i++) {
+                zoomImages[i].classList.remove("zoom-img");
+            }
+        }
+  </script>
